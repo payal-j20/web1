@@ -1,0 +1,128 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 1, 2021, 5:26:04 PM
+    Author     : shiv
+*/
+
+
+.big{
+    position:relative;
+    left:30px;
+    
+width:1200px;
+}
+.box-size{
+ 
+margin-right: 15px;
+background-color: transparent;
+width:380px;
+height:300px;
+display:inline-block;
+}
+.box-ins{
+position:relative;
+width:100%;
+height:100%;
+transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+.box-front{
+position:absolute;
+width:100%;
+height:100%;
+-webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+.box-back{
+position:absolute;
+width:100%;
+height:100%;
+ background-color: purple;
+  color: white;
+-webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+transform: rotateY(180deg);
+
+  
+}
+.box-size:hover .box-ins{
+transform: rotateY(180deg);
+}
+
+
+
+.previous {
+ text-decoration: none;
+  display: inline-block;
+  padding: 4px 4px;
+  background-color: blue;
+  color: black;
+  border-radius: 50%;
+}
+
+.a1{
+    display: inline;
+    position: absolute;
+    top: 0px;
+    
+}
+h1{
+    padding-left:30px;
+}
+.footer2{
+    position: relative;
+    width:1280px;
+    text-align: center;
+    all: initial;
+}
+footer{
+    left: 0;
+    bottom: 0;
+    background-color: #dddddd;
+   
+}
+.footer3{
+    
+    position: absolute;
+    top:90%;
+    
+    background-color: #dddddd;
+    width: 100%;
+    all: initial;
+}
+.footer-text{
+    padding-left: 100px;
+    display:horizontal;
+}
+span.fam{
+   display: inline-block;
+  width: 200px;
+  height: 100px;
+  padding-left: 130px;
+  font-size: 20px;
+   
+    
+}
+.u_box{
+    position: absolute;
+    top:35px;
+    left:900px;
+    z-index: 1;
+    width: 300px;
+    height: 350px;
+    background-color: #dddddd;
+    
+}
+.u_data_des{
+    position: absolute;
+}
+.nobr { white-space: nowrap }
+
+

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+         <link rel="stylesheet" type="text/css" href="ss1.css">
+        <link rel="icon" type="image/png" href="template\BESTTOTRAVELPNG.png">
+        <title>BEST TO TRAVEL</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+  margin: 0;
+}
+
+.site-footer {
+  /* .push must be the same height as footer */
+  
+  height: 142px; 
+}
+.site-footer {
+  background: #dddddd;
+}
+
+
+            
+            
+            .start{
+                width: 200px;height: 80px;
+            }
+            .banner{
+                width: 1200px;height:400px; 
+            }
+        </style>
+        
+        <script>
+            var firstim="template\\im1.jpg";
+            var secondim="template\\im2.jpg";
+            var thirdim="template\\im3.jpg"
+            var fn=1;
+            var sn=2;
+            var tn=3;
+            
+            var forward_counter=3;
+            var backward_counter=1;
+            var counter=0;
+            
+            var initc=1;
+            
+            var curentimg="template\\im1.jpg";
+            
+            </script>
+        
+        
+        
+       
+    </head>
+    <body >
+        <div class="start">
+            <button onclick="location.href = 'login.html';" class="a1" style="display: inline; top: 5px;" title="Login" >Login</button>
+            <img class="a1" style="left: 550px; display: inline; width: 200px;height: 80px;top: 5px;"  src="template\BESTTOTRAVELPNG.png">
+         
+        </div>
+        <br>
+        
+     
+        <div class="banner">      
+        <table style="position: relative;">
+            <tr>
+                <td><button  class="previous" onclick="back(curentimg)">&#8249;</button></td>
+                <td>
+                    <img id="homebanner" style="width: 1200px;height: 400px" src="template\im1.jpg">
+                </td>
+                <td>
+                    <button class="previous" onclick="forward(curentimg)" >&#8250;</button >
+                   
+                </td>
+            </tr>
+        </table>
+        </div>
+        <br>
+           <div class="big">
+<div class="box-size">
+<div class="box-ins">
+<div class="box-front">
+    <img style="width: 380px;height: 300px" src="template/im1.jpg">
+</div>
+<div class="box-back">
+<h1> back side</h1>
+</div>
+</div>
+</div>
+
+<div class="box-size">
+<div class="box-ins">
+<div class="box-front">
+<img style="width: 380px;height: 300px" src="template/im2.jpg">
+</div>
+<div class="box-back">
+<h1 > Rajasthan's golden desert ...</h1>
+</div>
+</div>
+</div>
+
+<div class="box-size">
+<div class="box-ins">
+<div class="box-front">
+<img style="width: 380px;height: 300px" src="template/im3.jpg">
+</div>
+<div class="box-back">
+<h1> back side </h1>
+</div>
+</div>
+</div>
+
+</div>
+
+
+        
+
+        
+<!-- 2 -->
+<br>
+           <div class="big">
+<div class="box-size">
+<div class="box-ins">
+<div class="box-front">
+    <img style="width: 380px;height: 300px" src="template/im4.jpg">
+</div>
+<div class="box-back">
+<h1> back side</h1>
+</div>
+</div>
+</div>
+
+<div class="box-size">
+<div class="box-ins">
+<div class="box-front">
+<img style="width: 380px;height: 300px" src="template/im5.jpg">
+</div>
+<div class="box-back">
+<h1 > Rajasthan's golden desert ...</h1>
+</div>
+</div>
+</div>
+
+<div class="box-size">
+<div class="box-ins">
+<div class="box-front">
+<img style="width: 380px;height: 300px" src="template/im6.jpg">
+</div>
+<div class="box-back">
+<h1> back side </h1>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- 3 -->
+<br>
+           <div class="big">
+<div class="box-size">
+<div class="box-ins">
+<div class="box-front">
+    <img style="width: 380px;height: 300px" src="template/im7.jpg">
+</div>
+<div class="box-back">
+<h1> back side</h1>
+</div>
+</div>
+</div>
+
+<div class="box-size">
+<div class="box-ins">
+<div class="box-front">
+<img style="width: 380px;height: 300px" src="template/im8.jpg">
+</div>
+<div class="box-back">
+<h1 > Rajasthan's golden desert ...</h1>
+</div>
+</div>
+</div>
+
+<div class="box-size">
+<div class="box-ins">
+<div class="box-front">
+<img style="width: 380px;height: 300px" src="template/im9.jpg">
+</div>
+<div class="box-back">
+<h1> back side </h1>
+</div>
+</div>
+</div>
+
+</div>
+        
+        
+ <script>
+
+
+function back(cur) {
+
+    if(cur=="template\\im1.jpg"&&initc==1)
+    {
+       document.getElementById("homebanner").src = cur;
+    
+    }
+    else{
+    
+    var image="template\\im";
+    
+    initc-=1;
+    curentimg=image;
+    curentimg+=initc+".jpg";
+    
+    
+    document.getElementById("homebanner").src = curentimg;
+    
+    }
+}
+function forward(cur) {
+     if(cur=="template\\im9.jpg" &&initc==9)
+    {
+       document.getElementById("homebanner").src = cur; 
+    }
+    else{
+    
+      
+    var image="template\\im";
+   
+    initc+=1;
+    
+    curentimg=image;
+    curentimg+=initc+".jpg";
+    
+    document.getElementById("homebanner").src = curentimg;
+    
+    
+    }
+}
+</script>
+<div style="padding-top: 20px;">
+<footer style="padding-top: 20px;" class="site-footer">
+  <p>contact us</p>
+    <p>about us</p>
+    <p>link</p>
+</footer>
+</div>
+    </body>
+</html>
